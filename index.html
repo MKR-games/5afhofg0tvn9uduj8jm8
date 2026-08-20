@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#E8E4D8">
+  <meta name="color-scheme" content="light">
+  <meta name="robots" content="noindex,nofollow,noarchive,nosnippet">
+  <title>똑… 똑… 똑… | 강태민 캐릭터 설정서</title>
+  <meta name="description" content="머더 미스터리 똑… 똑… 똑… 강태민 전용 모바일 캐릭터 설정서">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="is-locked">
+  <span class="page-top-anchor" id="pageTop" aria-hidden="true"></span>
+  <a class="skip-link" href="#mainContent">본문으로 바로가기</a>
+  <div class="reading-progress" aria-hidden="true"><span id="readingProgress"></span></div>
+
+  <section class="privacy-gate" id="privacyGate" role="dialog" aria-modal="true" aria-labelledby="gateTitle">
+    <div class="privacy-gate__card">
+      <p class="privacy-gate__eyebrow">PRIVATE CHARACTER FILE</p>
+      <h1 id="gateTitle">강태민 플레이어만<br>확인해 주세요.</h1>
+      <p>이 설정서에는 강태민만 알고 있는 행동과 비밀이 들어 있습니다. 다른 플레이어가 화면을 볼 수 없는지 확인해 주세요.</p>
+      <button id="acknowledgeButton" type="button">확인했습니다. 설정서 열기</button>
+    </div>
+  </section>
+
+  <header class="reader-header" id="readerHeader" inert aria-hidden="true">
+    <div class="reader-header__inner">
+      <a class="control-button control-button--guide" id="gameGuideLink" href="game-guide/index.html">게임 설명서</a>
+      <div class="reader-controls" aria-label="읽기 설정">
+        <button class="control-button font-button" id="fontDown" type="button" aria-label="글자 크기 줄이기">가−</button>
+        <button class="control-button font-button" id="fontUp" type="button" aria-label="글자 크기 키우기">가＋</button>
+        <button class="control-button control-button--map" id="mapOpen" type="button" aria-haspopup="dialog" aria-controls="mapModal" aria-expanded="false">MAP</button>
+        <button class="control-button control-button--toc" id="tocOpen" type="button" aria-haspopup="dialog" aria-controls="tocSheet" aria-expanded="false">목차</button>
+      </div>
+    </div>
+  </header>
+
+  <aside class="toc-sheet" id="tocSheet" aria-hidden="true" inert>
+    <button class="toc-sheet__backdrop" id="tocBackdrop" type="button" tabindex="-1" aria-label="목차 닫기"></button>
+    <div class="toc-sheet__panel" role="dialog" aria-modal="true" aria-labelledby="tocTitle">
+      <div class="toc-sheet__header">
+        <div><span>QUICK NAVIGATION</span><h2 id="tocTitle">목차</h2></div>
+        <button id="tocClose" type="button" aria-label="목차 닫기">닫기</button>
+      </div>
+      <nav class="toc-list" aria-label="설정서 목차">
+        <a href="#profile"><span>01</span><strong>인물 소개</strong></a>
+        <a href="#background"><span>02</span><strong>당신의 배경</strong></a>
+        <a href="#timeline"><span>03</span><strong>그날 밤의 행동</strong></a>
+        <a href="#belonging"><span>04</span><strong>당신의 소지품</strong></a>
+        <a href="#secrets"><span>05</span><strong>핵심 비밀</strong></a>
+        <a href="#goals"><span>06</span><strong>당신의 목적</strong></a>
+        <a href="#statement"><span>07</span><strong>첫 진술</strong></a>
+      </nav>
+    </div>
+  </aside>
+
+  <aside class="map-modal" id="mapModal" aria-hidden="true" inert>
+    <button class="map-modal__backdrop" id="mapBackdrop" type="button" tabindex="-1" aria-label="지도 닫기"></button>
+    <section class="map-modal__panel" role="dialog" aria-modal="true" aria-labelledby="mapTitle">
+      <header class="map-modal__header">
+        <div><span>TRAINING CENTER</span><h2 id="mapTitle">수련원 MAP</h2></div>
+        <button id="mapClose" type="button">닫기</button>
+      </header>
+      <div class="map-toolbar" aria-label="지도 확대 설정">
+        <button id="mapZoomOut" type="button" aria-label="지도 축소">−</button>
+        <output id="mapZoomValue" aria-live="polite">100%</output>
+        <button id="mapZoomIn" type="button" aria-label="지도 확대">＋</button>
+        <button id="mapReset" type="button">맞춤</button>
+      </div>
+      <div class="map-viewport" id="mapViewport" tabindex="0" aria-label="확대된 지도를 스크롤하여 확인">
+        <img id="mapImage" src="map.png" alt="수련원 실외시설과 실내시설의 방 및 이동 구조를 보여 주는 지도" draggable="false">
+      </div>
+      <p class="map-hint">확대 후 지도를 위아래·좌우로 움직여 확인하세요.</p>
+    </section>
+  </aside>
+
+  <main class="page-shell" id="mainContent" tabindex="-1" inert aria-hidden="true">
+    <section class="character-hero" aria-labelledby="characterName">
+      <p class="character-hero__eyebrow">CHARACTER 01 · PRIVATE</p>
+      <h2 id="characterName">강태민</h2>
+      <p class="character-hero__role">18세 · 남성 · 태권도장 고등부 수련생</p>
+      <p class="character-hero__lead">“당신은 늘 먼저 말하는 쪽이었다.”</p>
+      <div class="privacy-note">
+        <strong>다른 플레이어에게 보여주지 마세요.</strong>
+        <p>이 페이지는 강태민을 맡은 플레이어만 읽습니다. 필요한 내용은 말로 설명할 수 있지만, 설정서 화면 자체를 공개해서는 안 됩니다.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="profile" data-section="인물 소개">
+      <div class="section-heading">
+        <span class="section-number">01</span>
+        <div><p>AT A GLANCE</p><h2>인물 소개</h2></div>
+      </div>
+      <div class="profile-grid">
+        <article><span>도장 안에서의 모습</span><strong>분위기를 먼저 이끄는 사람</strong><p>장태식 관장과 한유정 사범은 당신을 동생들을 잘 끌고 가는, 믿고 맡길 수 있는 수련생으로 본다.</p></article>
+        <article><span>김하준과의 관계</span><strong>늘 무리 주변에 있던 후배</strong><p>하준은 장난이 심해도 웃었다. 당신은 화를 내지 않으면 괜찮은 것이라고 생각했다.</p></article>
+        <article><span>그날의 출발점</span><strong>몰래 가져온 소주</strong><p>수련회 밤을 평범하게 보내기 싫었다. 대단한 이유는 없었다.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="background" data-section="당신의 배경">
+      <div class="section-heading">
+        <span class="section-number">02</span>
+        <div><p>YOUR STORY</p><h2>당신의 배경</h2></div>
+      </div>
+      <div class="story-block">
+        <h3>도장에서의 당신</h3>
+        <p>당신은 태권도장 고등부 수련생, 강태민이다. 18세. 도장 안에서 당신은 늘 먼저 말하는 쪽이었다. 누가 어색하게 서 있으면 먼저 툭 치고, 분위기가 가라앉으면 일부러 큰소리를 냈다. 장난이 조금 지나쳐도 사람들은 대개 웃고 넘어갔다.</p>
+        <p>장태식 관장은 당신을 리더십 있는 수련생으로 봤고, 한유정 사범도 당신이 동생들을 잘 끌고 간다고 생각했다. 적어도 어른들 앞에서 당신은 문제가 있는 학생은 아니었다. 오히려 믿고 맡길 수 있는 쪽에 가까웠다.</p>
+      </div>
+      <div class="story-block">
+        <h3>김하준</h3>
+        <p>김하준은 늘 그 주변에 있었다. 아주 가까운 것도 아니고, 완전히 밖에 있는 것도 아닌 애매한 자리. 당신이 장난을 치면 하준은 웃었다. 조금 심하게 말해도 웃었다. 가끔 그 웃음이 늦게 나올 때가 있었지만, 당신은 깊게 보지 않았다.</p>
+        <p>싫으면 싫다고 말했을 거라고 생각했다. 화를 내지 않으면 괜찮은 거라고 생각했다. 하준이 당신들 곁에 있고 싶어 한다는 건 알고 있었다. 그래서 더 쉽게 굴었다.</p>
+      </div>
+      <div class="story-block">
+        <h3>수련회 밤</h3>
+        <p>이번 수련회는 별것 아닌 일정이었다. 산속의 오래된 수련원, 낡은 방, 밖에 있는 화장실, 검은 복도, 바깥 걸쇠가 달린 닫힌 방. 시설은 불편했지만 당신은 그런 분위기가 나쁘지 않았다. 도장을 벗어났다는 것만으로도 충분히 들떴다.</p>
+        <p>밤이 되면 뭔가 재미있는 일이 생길 것 같았다. 그냥 자고 일어나기에는 아까운 밤이었다. 그래서 당신은 몰래 소주를 가져왔다. 대단한 이유가 있었던 건 아니다. 수련회 밤을 평범하게 보내기 싫었다. 그뿐이었다.</p>
+      </div>
+      <div class="story-block">
+        <h3>술자리</h3>
+        <p>수련생방에서 당신이 소주를 꺼냈을 때, 민도겸과 서은찬은 처음에 망설였다. 하지만 당신이 계속 분위기를 띄우자 결국 자리에 남았다. 김하준도 있었다.</p>
+        <p>하준은 당신이 권하는 술을 쉽게 거절하지 못했다. 잔을 내밀면 받았고, 괜찮냐고 물으면 고개를 끄덕였다. 처음에는 웃음이 오갔다. 하지만 시간이 지나자 하준의 얼굴이 생각보다 빨리 풀렸다. 말투가 느려지고, 눈이 조금씩 풀렸다. 당신은 하준이 술이 많이 약한 줄 알았다.</p>
+        <p>방 안은 점점 답답해졌다. 네 명이 한 방에 모여 있었고, 술 냄새가 남았다. 당신은 “덥다”며 창문을 열었다. 실제로 방은 더웠고, 창문을 열어 두면 술 냄새도 빠질 거라고 생각했다. 수련원은 1층이었고, 창문은 사람이 드나들 수 있을 만큼 컸다. 그때는 그게 별일이 될 거라고 생각하지 않았다.</p>
+      </div>
+      <div class="story-block">
+        <h3>오해</h3>
+        <p>잠시 뒤, 하준이 자리에서 일어났다. “화장실 좀 갔다 올게.” 말은 그렇게 했다. 그런데 손에는 소주병이 들려 있었다. 당신은 그걸 봤다. 하준은 병을 어딘가 치우려는 것처럼 보이기도 했다. 하지만 당신은 그렇게 받아들이지 않았다.</p>
+        <p>화장실에 가는데 소주병을 들고 갈 이유는 없었다. 하준이 관장이나 사범에게 술 이야기를 하려는 것일지도 모른다고 생각했다. 지금 하준이 소주병을 들고 어른들에게 가면, 소주를 가져온 사람이 당신이라는 사실이 바로 드러난다. 계속 술을 권한 것도, 방 안 분위기를 그렇게 만든 것도 문제 삼을 수 있었다.</p>
+      </div>
+      <div class="story-block story-block--dark">
+        <h3>검은 복도</h3>
+        <p>당신은 바로 자리에서 일어났다. “나도 화장실.” 그 말은 핑계였다. 당신은 하준을 따라나갔다. 검은 복도는 방 안보다 더 어두웠다. 불빛은 약했고, 오래된 벽은 소리를 눌러 붙잡는 것처럼 조용했다.</p>
+        <p>당신은 하준을 붙잡고 소주병을 내려놓으라고 했다. 하준은 쉽게 내놓지 않았다. 취해서 그런 건지, 아니면 더는 당신 말대로 움직이고 싶지 않았던 건지 알 수 없었다. 당신은 병을 빼앗으려 했고, 하준은 버텼다. 몸이 부딪혔다. 손이 엉켰다. 그 과정에서 하준이 회의실 문에 얼굴을 부딪혔다. 코피가 났다.</p>
+      </div>
+      <div class="story-block story-block--danger">
+        <h3>닫힌 방</h3>
+        <p>그 순간 당신도 놀랐다. 하지만 놀란 것보다 먼저 든 생각은 하나였다. 들키면 끝이다. 술, 다툼, 코피. 전부 당신에게 돌아올 일이었다. 하준이 그대로 수련생방으로 돌아가거나 어른들에게 가면 더 큰일이 될 것 같았다.</p>
+        <p>그때 당신 눈에 검은 복도 끝 닫힌 방이 들어왔다. 저녁에 관장이 절대 열지 말라고 했던 방. 문 바깥쪽에 걸쇠가 달린 방. 밖에서 걸쇠를 걸면 안에서는 열 수 없는 방이었다.</p>
+        <p>당신은 하준을 그 안으로 밀어 넣고 바깥 걸쇠를 걸었다. 죽이려던 것은 아니었다. 잠깐 겁주고, 술이 깨고, 조용해지면 열어주면 된다고 생각했다.</p>
+        <blockquote>똑… 똑… 똑…</blockquote>
+        <p>당신은 그 소리를 들었다. 하지만 바로 열지 않았다. 지금 문을 열면 모든 것이 드러난다. 조금만 지나면 하준이 조용해질 거라고 생각했다. 아니, 그렇게 생각해야 했다.</p>
+      </div>
+      <div class="story-block">
+        <h3>다음 날 아침</h3>
+        <p>당신은 수련생방으로 돌아왔다. 도겸은 당신을 보는 것 같았고, 은찬은 하준이 돌아오지 않는 것을 신경 쓰는 듯했다. 당신은 아무 말도 하지 않았다. 나중에 열어주면 된다. 조금만 있다가. 그렇게 생각하며 이불을 덮었다.</p>
+        <p>술기운과 긴장이 한꺼번에 밀려왔다. 눈을 감은 기억은 있는데, 다시 일어난 기억은 없다.</p>
+        <p class="ending-line">다음 날 아침, 하준은 돌아오지 않았다.</p>
+      </div>
+    </section>
+
+    <section class="content-section" id="timeline" data-section="그날 밤의 행동">
+      <div class="section-heading">
+        <span class="section-number">03</span>
+        <div><p>YOUR TIMELINE</p><h2>그날 밤의 행동</h2></div>
+      </div>
+      <ol class="timeline-list">
+        <li><div class="timeline-time">21:40</div><div><span class="location">수련생방</span><p>몰래 가져온 소주를 꺼냈다. 민도겸, 서은찬, 김하준이 자리에 남았다. 당신은 하준에게 여러 번 술을 권했다.</p></div></li>
+        <li><div class="timeline-time">21:50</div><div><span class="location">수련생방</span><p>방이 덥고 술 냄새가 남자 창문을 열었다. 창문은 사람이 드나들 수 있을 만큼 컸다.</p></div></li>
+        <li><div class="timeline-time">22:00</div><div><span class="location">수련생방</span><p>김하준은 이미 말이 느려지고 눈이 풀려 있었다. 방 안에는 소주병과 종이컵이 놓여 있었다.</p></div></li>
+        <li><div class="timeline-time">22:05</div><div><span class="location">수련생방 → 검은 복도</span><p>김하준이 “화장실 좀 갔다 올게”라고 말하며 소주병을 들고 나갔다. 당신은 고자질하러 간다고 오해해 곧바로 따라나갔다.</p></div></li>
+        <li><div class="timeline-time">22:10</div><div><span class="location">회의실 문 앞</span><p>소주병을 두고 몸싸움이 벌어졌다. 김하준은 회의실 문에 얼굴을 부딪혀 코피를 흘렸다. 병은 손에서 빠져 회의실 문 가까운 구석으로 굴러갔다.</p></div></li>
+        <li class="timeline-list__critical"><div class="timeline-time">22:15</div><div><span class="location">닫힌 방</span><p>당신은 김하준을 방 안으로 밀어 넣고 문을 닫은 뒤 바깥 걸쇠를 걸었다. 안에서 세 번의 노크가 났지만 열지 않았다.</p></div></li>
+        <li><div class="timeline-time">22:17</div><div><span class="location">검은 복도 → 수련생방</span><p>혼자 돌아왔다. 민도겸과 서은찬은 당신이 김하준 없이 돌아온 것을 보았다. 당신은 설명하지 않았다.</p></div></li>
+        <li><div class="timeline-time">22:22</div><div><span class="location">수련생방</span><p>방문 바로 밖에서 세 번의 노크가 났다. 김하준을 가둔 일이 떠올라 문을 확인하지 않았다.</p><aside>중요: 이 소리는 닫힌 방이 아니라 수련생방 문에서 났다.</aside></div></li>
+        <li><div class="timeline-time">22:30 이후</div><div><span class="location">수련생방</span><p>술기운과 긴장 속에서 이불을 덮고 누웠다. 이후 누가 방을 나가거나 들어왔는지 제대로 확인하지 못했다.</p></div></li>
+        <li><div class="timeline-time">다음 날 아침</div><div><span class="location">닫힌 방 앞</span><p>김하준이 보이지 않는다는 말에 다른 사람들과 닫힌 방으로 갔다. 바깥 걸쇠는 걸려 있었고, 방 안에서 김하준의 시신이 발견되었다.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="content-section" id="belonging" data-section="당신의 소지품">
+      <div class="section-heading">
+        <span class="section-number">04</span>
+        <div><p>PERSONAL ITEM</p><h2>당신의 소지품</h2></div>
+      </div>
+      <article class="item-card">
+        <p class="item-card__label">소지품</p>
+        <h3>피가 묻은 잠옷</h3>
+        <p>강태민의 잠옷이다.</p>
+        <p>소매와 가슴팍 부근에 마른 피가 조금 묻어 있다. 피의 양은 많지 않지만, 단순히 손끝에 스친 정도로 보이지는 않는다.</p>
+        <p>옷감에는 먼지와 구겨진 주름도 함께 남아 있다. 누군가와 가까운 거리에서 밀치거나 붙잡는 과정에서 생긴 흔적처럼 보인다.</p>
+      </article>
+    </section>
+
+    <section class="content-section content-section--secret" id="secrets" data-section="핵심 비밀">
+      <div class="section-heading">
+        <span class="section-number">05</span>
+        <div><p>KEEP HIDDEN</p><h2>핵심 비밀</h2></div>
+      </div>
+      <p class="section-intro">다른 플레이어에게 들키지 않도록 지켜야 할 두 가지 사실입니다.</p>
+      <div class="secret-list">
+        <article><span>비밀 1</span><p>검은 복도에서 김하준과 몸싸움을 했고, 그 과정에서 김하준이 회의실 문에 얼굴을 부딪혀 코피를 흘린 사실.</p></article>
+        <article><span>비밀 2</span><p>김하준을 닫힌 방 안으로 밀어 넣고, 바깥 걸쇠를 걸어 안에서 나오지 못하게 한 사실.</p></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="goals" data-section="당신의 목적">
+      <div class="section-heading">
+        <span class="section-number">06</span>
+        <div><p>PERSONAL GOALS</p><h2>당신의 목적</h2></div>
+      </div>
+      <div class="goal-list">
+        <article><strong>+3점</strong><p>김하준을 죽음에 이르게 한 진짜 원인을 밝혀낸다.</p></article>
+        <article><strong>+2점</strong><p>민도겸에게 당신의 핵심 비밀 2가지가 모두 들키지 않는다.</p><small>단, 1가지만 들켰다면 성공으로 본다.</small></article>
+      </div>
+    </section>
+
+    <section class="content-section" id="statement" data-section="첫 진술">
+      <div class="section-heading">
+        <span class="section-number">07</span>
+        <div><p>OPENING STATEMENT</p><h2>첫 진술</h2></div>
+      </div>
+      <div class="statement-note"><strong>게임 시작 시 읽습니다.</strong><p>자신의 차례가 오면 아래 내용을 다른 플레이어에게 그대로 읽어 주세요.</p></div>
+      <blockquote class="statement-card" id="statementText">
+        <p>“저는 거의 수련생방에 있었습니다. 하준이도 처음엔 같이 있었고요. 다들 피곤하긴 했지만, 특별히 큰일이 있었다고는 생각 안 했습니다.</p>
+        <p>하준이가 중간에 화장실 간다고 나간 건 기억납니다. 저도 잠깐 따라 나갔던 것 같긴 한데, 오래 있진 않았습니다. 그냥 복도 쪽에 잠깐 나갔다가 다시 들어왔습니다.</p>
+        <p>아침에 하준이가 닫힌 방에서 발견됐다는 말 듣고 저도 놀랐습니다. 그 방은 관장님이 절대 가지 말라고 했던 방 아닙니까. 하준이가 왜 거기 있었는지는 저도 모릅니다.”</p>
+      </blockquote>
+      <button class="copy-button" id="copyStatement" type="button">첫 진술 복사</button>
+      <p class="copy-status" id="copyStatus" aria-live="polite"></p>
+    </section>
+
+    <footer class="page-footer">
+      <p>똑… 똑… 똑…</p>
+      <strong>강태민 캐릭터 설정서</strong>
+      <div class="page-footer__links"><a href="../../index.html">5인 통합집</a><a id="footerTopLink" href="#pageTop">맨 위로</a></div>
+    </footer>
+  </main>
+
+  <button class="top-button" id="topButton" type="button" tabindex="-1" aria-hidden="true" aria-label="맨 위로 이동" title="맨 위로">↑</button>
+  <script src="script.js"></script>
+</body>
+</html>
